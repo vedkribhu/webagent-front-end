@@ -8,7 +8,7 @@ import SwiperComponent from './SwiperComponent';
 const PlaygroundContainer = styled.div`
   padding: 16px;
   display: flex;
-  flex: 0.79;
+  flex: 0.7;
   overflow-y: auto;
   overflow-x: hidden;
   height: 100vh;
@@ -45,16 +45,14 @@ const StepItem = styled.div`
 `;
 
 const StepNumber = styled.span`
-  background-color: #ccc;
-  color: #fff;
+  color: #999999;
   width: 24px;
   height: 24px;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 8px;
-  
+  margin-right: 16px;
+  font-size: 24px;
 `;
 
 const StepsContainer = styled.div`

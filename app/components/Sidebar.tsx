@@ -5,7 +5,7 @@ import { MdRestartAlt } from "react-icons/md";
 import { FaRegStopCircle } from "react-icons/fa";
 
 const SidebarContainer = styled.div`
-  flex: 0.21;
+  flex: 0.3;
   margin-right: 6px;
   border-right: 1px solid #ccc;
   background-color: #ffffff;
@@ -75,8 +75,7 @@ const SuggestionItemContainer = styled.div`
     transition: background-color 0.2s;
     color: #333;
     gap: 8px;
-    height: 70px;
-    padding: 12px;
+    padding: 16px 12px;
     &:hover {
       background-color: #e0e0d4;
     }
@@ -190,6 +189,7 @@ const Sidebar = (
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*',
       },
+      referrerPolicy: "unsafe-url" 
     });
     const { result } = await response.json();
     setResults(result);

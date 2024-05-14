@@ -166,7 +166,7 @@ type SidebarProps = {
 }
 
 const mock_url = 'https://d044ae62-7576-40c3-9aa1-860c241d7bb9.mock.pstmn.io/runagent';
-const actual_url = 'http://127.0.0.1:5000/runagent';
+const actual_url = 'ec2-13-233-95-205.ap-south-1.compute.amazonaws.com:5000/runagent';
 
 const Sidebar = (
   { isLoading, setIsLoading, results, setResults }: SidebarProps

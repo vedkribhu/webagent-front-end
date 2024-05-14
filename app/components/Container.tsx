@@ -13,12 +13,9 @@ const Container = styled.div`
 `;
 
 const App = () => {
-  // Initialize the results with sample-response.json data
-  const { result } = sampleResponse;
-
 
   const [isLoading, setIsLoading] = React.useState(false);
-  const [results, setResults] = React.useState<Array<string>>([...result]);
+  const [results, setResults] = React.useState<Array<string>>([]);
 
   console.log('isLoading', isLoading);
 

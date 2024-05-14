@@ -98,8 +98,11 @@ type PlaygroundProps = {
 
 const Playground = ({ isLoading, setIsLoading, results }: PlaygroundProps) => {
   const steps = [
+    // eslint-disable-next-line react/jsx-key
     <span><HighlightedPart>Type in a query </HighlightedPart> or choose one of the examples on the chat interface to get started</span>,
+    // eslint-disable-next-line react/jsx-key
     <span>We support some websites that require authentication, in which a <HighlightedPart>login button</HighlightedPart> will appear</span>,
+    // eslint-disable-next-line react/jsx-key
     <span>You may <HighlightedPart>interact with the screen</HighlightedPart> to take over control or correct the agent</span>
   ];
 
